@@ -1,0 +1,349 @@
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+
+header {
+	padding: 2rem 5rem;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #124076;
+}
+
+.menu {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.menu li {
+	list-style-type: none;
+	font-weight: bold;
+}
+
+.menu li a:hover {
+	color: red;
+}
+
+.content {
+	padding: 0 5rem;
+}
+
+#home,
+#courses {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 3rem;
+}
+
+#courses {
+	flex-direction: row-reverse;
+}
+
+#home img,
+#courses img {
+	width: 100%;
+	max-width: 35rem;
+}
+
+#home article,
+#courses article {
+	max-width: 45rem;
+}
+
+#home h2,
+#courses h2 {
+	font-size: 1.3rem;
+	margin-bottom: 1rem;
+}
+
+#home p,
+#courses p {
+	font-size: 0.9rem;
+	margin-bottom: 0.5rem;
+}
+
+#home a,
+#courses a {
+	font-size: 0.9rem;
+}
+
+#mentor {
+	margin-bottom: 10rem;
+}
+
+#mentor .title h2 {
+	font-size: 1.3rem;
+	margin-bottom: 1rem;
+}
+
+#mentor .title p {
+	font-size: 0.9rem;
+}
+
+.box {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-top: 3rem;
+	gap: 2rem;
+}
+
+.box h3 {
+	margin-bottom: 1rem;
+}
+
+.mentor-image {
+	width: 100%;
+	max-width: 10rem;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+}
+
+#partner {
+	text-align: center;
+	margin-bottom: 8rem;
+}
+
+.perusahaan {
+	display: flex;
+	justify-content: space-around;
+	margin: 4rem 0;
+}
+
+.perusahaan img {
+	width: 100%;
+	max-width: 8rem;
+	object-fit: contain;
+}
+
+footer {
+	color: white;
+	background-color: #40679e;
+	padding: 3rem 5rem;
+	padding-bottom: 1rem;
+}
+
+footer section {
+	display: flex;
+	gap: 10rem;
+	margin-bottom: 10rem;
+}
+
+footer .info {
+	max-width: 30rem;
+}
+
+.foot {
+	display: flex;
+	gap: 4rem;
+}
+
+footer article {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+}
+
+footer h4 {
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+footer p {
+	font-size: 0.9rem;
+}
+
+footer div img {
+	width: 4rem;
+}
+
+footer .copyright {
+	text-align: center;
+}
+
+footer .image {
+	display: flex;
+	flex-direction: column;
+}
+
+.bio {
+	position: fixed;
+	background: #eeedeb;
+	left: 0;
+	bottom: 10%;
+	padding: 1rem;
+	border-top-right-radius: 18px;
+	border-bottom-right-radius: 18px;
+	z-index: 50;
+	height: fit-content;
+	cursor: pointer;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: start;
+}
+
+.bio.hidden {
+	width: 5px;
+	height: 5rem;
+	bottom: 10%;
+}
+
+.bio .arrow {
+	font-size: 1.25rem;
+	padding-left: 1rem;
+	place-self: center;
+}
+
+.bio.hidden .arrow {
+	position: absolute;
+	right: 0.5rem;
+}
+
+.bio.hidden:hover {
+	width: 2.5rem;
+	transition: all ease-in-out 0.5s;
+}
+
+.bio-content .section-title {
+	text-align: center;
+}
+
+.bio-content.hidden {
+	transform: translateX(-100%);
+}
+
+.bio-content {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	transform: translateX(0);
+}
+
+.bio-content p {
+	display: flex;
+	font-size: 1rem;
+	text-align: center;
+	width: 15rem;
+	margin-top: 1rem;
+	margin-bottom: 15px;
+	flex-direction: column;
+}
+
+.bio-content img {
+	width: 13rem;
+	border-radius: 100%;
+	align-self: center;
+}
+
+.list img {
+	width: 40px;
+	margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		padding: 2rem 1rem;
+	}
+
+	nav {
+		flex-direction: column;
+	}
+
+	.main {
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+
+	.content {
+		padding: 3rem 1rem;
+	}
+
+	#home {
+		flex-direction: column;
+	}
+
+	#home img {
+		max-width: 15rem;
+	}
+
+	#courses {
+		flex-direction: column;
+	}
+
+	#courses img {
+		max-width: 15rem;
+	}
+
+	.box {
+		flex-direction: column;
+	}
+
+	.perusahaan {
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	footer {
+		padding: 3rem 1rem;
+	}
+
+	footer section {
+		gap: 3rem;
+		flex-direction: column;
+	}
+
+	.foot {
+		display: flex;
+		flex-direction: column;
+		gap: 4rem;
+	}
+
+	footer article {
+		display: flex;
+		flex-direction: column;
+		gap: 0.3rem;
+	}
+
+	footer h4 {
+		font-size: 1.3rem;
+		font-weight: 600;
+	}
+
+	footer p {
+		font-size: 0.9rem;
+	}
+
+	footer div img {
+		width: 4rem;
+	}
+
+	footer .copyright {
+		text-align: center;
+	}
+
+	footer .image {
+		display: flex;
+		flex-direction: column;
+	}
+}
