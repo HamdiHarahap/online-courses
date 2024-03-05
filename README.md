@@ -1,4 +1,4 @@
-#Hamdi Course
+# Hamdi Course
 
 This website is a submission for the Dicoding [Belajar Dasar Pemrograman Web](https://www.dicoding.com/academies/123/corridor) online course.
 
